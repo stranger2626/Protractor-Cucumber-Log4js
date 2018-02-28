@@ -8,7 +8,7 @@ Feature: Menu
     Then Text of "Menu" should contain "MENU"
 
     When  I click "Menu"
-      And I wait until "Expanded Menu" is present
+      And I wait until "Expanded Menu" is presents
     Then "Expanded Menu" should be visible
       And Count of "Expanded Menu Sublists" should be "3"
       And Text of "Expanded Menu Row Titles" should contain "WHAT WE DO"
