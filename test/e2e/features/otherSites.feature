@@ -12,7 +12,7 @@ Feature: Access to other sites
     Then Page title should be "The world's leading software development platform · GitHub"
 
   @other 
-  Scenario Outline: I should be able to access <>
+  Scenario Outline: I should be able to access <URL>
     Given I open "<URL>" url
     Then Page title should be "<Title>"
 

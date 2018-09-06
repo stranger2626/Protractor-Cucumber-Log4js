@@ -9,16 +9,15 @@
     "cucumber": "^3.2.1",
     "cucumber-html-reporter": "^3.0.4",
     "log4js": "^2.5.3",
-    "protractor": "^5.2.2",
+    "protractor": "^5.4.0",
     "protractor-cucumber-framework": "^4.1.1",
-    "yargs": "^11.0.0"
+    "yargs": "^11.1.0"
   },
   "devDependencies": {},
   "scripts": {
     "e2e": "protractor ./test/e2e/config/config.js",
     "pree2e": "del /f combined.log, error.log",
     "postinstall": "webdriver-manager update",
-    "poste2e": "node reporter.js",
     "e2e:update": "webdriver-manager update",
     "e2e:generate-report": "node reporter.js",
     "e2e:start-server": "start cmd /k \"node_modules\\.bin\\webdriver-manager start\""
